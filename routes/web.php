@@ -22,4 +22,6 @@ Route::get('/cities', 'CityController@index');
 Route::get('/search/', 'CountryController@search')->name('search');
 Route::get('/continent', 'CountryController@listContinent');
 Route::get('continentCountry/{continent}', 'CountryController@listContinent');
+Route::get('filter', 'CountryController@filterCountry');
+Route::get('filterSelect', 'CountryController@filterShow');
 
